@@ -26,7 +26,7 @@ if($_POST['comment']) {
     $email = clean($_POST['email']);
     $msg = clean($_POST['msg']);
     
-    $mail_to = 'contact@domain.tld';
+    $mail_to = file_get_contents('config/addr.txt');
     $subject = 'Message from visitor at meadomus.net.';
     
     $body = 'From: '.$first." ".$last."\n";
