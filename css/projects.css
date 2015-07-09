@@ -1,0 +1,29 @@
+/* The purpose of this page is to provide a means for users without javascript
+to view the images that are part of the responsive slide show on home page.
+It should be as backward compatible as possible.  */
+  
+.content>*{
+  width:100%;
+  padding-left: .5em;
+  overflow:hidden;
+}
+.slide img {width:100%; max-width: 100%;}
+.slide {
+  max-width:508px;
+  padding-right: 8px;
+  padding-bottom: .5em;
+  float: left;
+}
+.caption{padding-bottom: 0.5em;}
+@media only screen and (min-width: 600px){
+  .slide{
+    width:50%;
+    float: left;
+  }
+  .caption {min-height: 10.5em;}
+}
+@media only screen and (min-width: 1120px){
+  .slide{
+    width:33.3%;
+  }
+}

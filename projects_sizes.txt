@@ -1,0 +1,6 @@
+sizes="
+(min-width: 1120px) calc((1120px - 8px)/3 - 8px), 
+(min-width: 1024px) 500px),
+(min-width: 600px) calc((100vw - 8px)/2 - 8px),
+(min-width: 516px) 500px),
+calc(100vw - 8px - 8px)"

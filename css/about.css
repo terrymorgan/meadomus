@@ -1,0 +1,41 @@
+.content  {padding: .6em 1em;}
+
+img{width:100%; max-width: 100%}
+
+.portrait {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  max-width: 192px;
+}
+.descr p:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+@media only screen and (min-width: 380px){
+  .portrait {float: left; max-width: 160px;}
+}
+@media only screen and (min-width: 600px){
+  .portrait {max-width: 192px;}
+}
+@media only screen and (min-width: 700px){
+  .content  {padding: 1em 2em;}
+}
+@media only screen and (min-width: 800px){
+  .descr{
+    -webkit-columns: 300px 2;
+       -moz-columns: 300px 2;
+            columns: 300px 2;
+    -webkit-column-gap: 1.3em;
+       -moz-column-gap: 1.3em;
+            column-gap: 1.3em;
+  }
+  .descr p {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .portrait {
+    margin-right: 1.3em; 
+    max-width: 224px;
+  }
+}
